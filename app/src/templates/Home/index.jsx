@@ -1,3 +1,9 @@
+import * as Styled from './styles';
+
 export const Home = () => {
-  return <h1>Hello</h1>;
+  return (
+    <Styled.Wrapper>
+      <h1>Hello</h1>
+    </Styled.Wrapper>
+  );
 };
