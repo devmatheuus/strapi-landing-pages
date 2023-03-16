@@ -1,5 +1,7 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Title = styled.h1`
-    color: ${({ theme }) => theme.colors.white};
+${({ theme, isLight }) => css`
+    color: ${isLight ? theme.colors.primary : theme.colors.white}
+`}
 `;
