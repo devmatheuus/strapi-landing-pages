@@ -1,7 +1,11 @@
+import { withKnobs } from '@storybook/addon-knobs';
+import { addDecorator } from '@storybook/react';
 import { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles } from '../src/styles/globalStyles';
 import { theme } from '../src/styles/theme';
+
+addDecorator(withKnobs);
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },

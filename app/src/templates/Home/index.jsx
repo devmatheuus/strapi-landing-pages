@@ -4,7 +4,7 @@ import * as Styled from './styles';
 export const Home = () => {
   return (
     <Styled.Wrapper>
-      <Heading>Hello world</Heading>
+      <Heading>Hello</Heading>
     </Styled.Wrapper>
   );
 };
