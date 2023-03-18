@@ -18,14 +18,12 @@ export default {
       options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
       control: {
         type: 'select',
-        // labels: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
       },
     },
     size: {
       options: ['small', 'medium', 'big', 'huge'],
       control: {
         type: 'select',
-        // labels: ['small', 'medium', 'big', 'huge'],
       },
     },
   },
