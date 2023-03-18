@@ -1,0 +1,2 @@
+npm test -- --watchAll="false" --coverage => execute all tests with coverage report
+npx eslint src/**/*.jsx --fix => fix all files
