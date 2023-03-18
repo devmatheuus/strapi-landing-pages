@@ -15,15 +15,17 @@ export default {
     isThemeDark: { type: 'boolean' },
     isUppercase: { type: 'boolean' },
     as: {
+      options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
       control: {
         type: 'select',
-        options: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
+        // labels: ['h1', 'h2', 'h3', 'h4', 'h5', 'h6'],
       },
     },
     size: {
+      options: ['small', 'medium', 'big', 'huge'],
       control: {
         type: 'select',
-        options: ['small', 'medium', 'big', 'huge'],
+        // labels: ['small', 'medium', 'big', 'huge'],
       },
     },
   },
