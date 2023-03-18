@@ -18,10 +18,17 @@ const titleAppearance = (isUppercase) => css`
     text-transform: ${isUppercase ? 'uppercase' : 'none'};
 `;
 
+const mediaFont = (theme) => css`
+    @media ${theme.media.lteMedium} {
+        font-size: ${theme.fonts.sizes.xLarge};
+    }
+`;
+
 export const Title = styled.h1`
 ${({ theme, isThemeDark, size, isUppercase }) => css`
     color: ${isThemeDark ? theme.colors.white : theme.colors.primary};
     ${titleSize[size](theme)};
     ${titleAppearance(isUppercase)};
+    ${mediaFont(theme)};
 `}
 `;
